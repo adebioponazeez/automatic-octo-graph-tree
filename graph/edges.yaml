@@ -1,0 +1,24 @@
+edges:
+  - source: "G-001"
+    target: "PRJ-001"
+    relationship: "belongs_to"
+
+  - source: "G-002"
+    target: "PRJ-001"
+    relationship: "belongs_to"
+
+  - source: "AGT-ORCH-001"
+    target: "G-001"
+    relationship: "leads"
+
+  - source: "AGT-COST-001"
+    target: "G-001"
+    relationship: "optimizes"
+
+  - source: "AGT-CODE-001"
+    target: "G-002"
+    relationship: "implements"
+
+  - source: "AGT-VERIFY-001"
+    target: "G-002"
+    relationship: "verifies"

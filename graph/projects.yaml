@@ -1,0 +1,10 @@
+projects:
+  - id: "PRJ-001"
+    name: "Sovereign AI Router & Cowork Harness"
+    status: "active"
+    owner: "adebioponazeez"
+    monthly_budget_usd: 50.00
+    created_at: "2026-08-25T16:50:00Z"
+    updated_at: "2026-08-25T17:35:00Z"
+    updated_by: "Chief-of-Staff"
+    description: "High-throughput, cost-optimized multi-model AI router and Cowork harness with Grok, ChatGPT, Claude, and Local backends."
