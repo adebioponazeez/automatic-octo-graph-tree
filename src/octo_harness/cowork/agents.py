@@ -148,3 +148,41 @@ class SafetyAuditorAgent(BaseCoworkAgent):
             model_preference=model_preference,
             strategy=RoutingStrategy.QUALITY_FIRST,
         )
+
+
+class GrokbotAgent(BaseCoworkAgent):
+    """Real-time world-state grounding, adversarial probing, and anti-sycophancy review."""
+
+    def __init__(self, router: RouterEngine, model_preference: Optional[str] = "grok-3"):
+        super().__init__(
+            name="Grokbot",
+            role="grounding_adversary",
+            system_prompt=(
+                "You are Grokbot (AGT-GROK-001) · Real-Time Grounding & Adversarial Probe. "
+                "Your mission is live world-state verification, breaking API drift detection, "
+                "and ruthless anti-sycophantic challenge. Probe all hidden assumptions, cross-reference "
+                "real-time ecosystem trends, and state unvarnished technical realities with zero fluff."
+            ),
+            router=router,
+            model_preference=model_preference,
+            strategy=RoutingStrategy.GROK_PRIMARY,
+        )
+
+
+class KimiContextAgent(BaseCoworkAgent):
+    """Ultra-long context corpus distillation, repository ingestion, and dependency indexing."""
+
+    def __init__(self, router: RouterEngine, model_preference: Optional[str] = "moonshotai/kimi-k3"):
+        super().__init__(
+            name="KimiContextEngine",
+            role="context_synthesizer",
+            system_prompt=(
+                "You are Kimi Context Engine (AGT-KIMI-001) · 2M+ Token Corpus Synthesizer. "
+                "Your role is massive codebase ingestion, hierarchical dependency mapping, and lossless 100:1 "
+                "context distillation. Extract exact symbol definitions, types, schemas, and invariants into dense, "
+                "actionable execution capsules for downstream specialist workers."
+            ),
+            router=router,
+            model_preference=model_preference,
+            strategy=RoutingStrategy.COST_OPTIMIZED,
+        )

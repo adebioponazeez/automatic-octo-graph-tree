@@ -302,6 +302,22 @@ When the Principal gives an objective:
 
 ---
 
+### 13. AGT-GROK-001 · Grokbot Real-Time Grounding & Adversarial Probe
+- **Role:** Live world-state ingestion, X / real-time trend intelligence, zero-day drift detection, and brutally honest anti-sycophantic challenge.
+- **Mandate:** Probe live external data, cross-reference breaking architectural patterns, and stress-test candidate solutions against real-time conditions.
+- **Not in Scope:** Validating stale assumptions or accepting claims without external corroboration.
+- **Model Preference:** `grok-3` / `grok-2-vision-1212` / `grok-beta`
+
+---
+
+### 14. AGT-KIMI-001 · Kimi Long-Horizon Context Synthesizer
+- **Role:** 2,000,000+ token repository ingestion, hierarchical document indexing, AST dependency extraction, and lossless 100:1 context distillation.
+- **Mandate:** Ingest massive codebases, multi-year logs, and complex documentation for pennies, emitting high-density execution capsules for downstream worker agents.
+- **Not in Scope:** Code execution or mathematical invariant proving (delegates to `AGT-CODE-001` and `AGT-CRITIC-001`).
+- **Model Preference:** `moonshotai/kimi-k3` / `moonshotai/moonshot-v1-128k`
+
+---
+
 ## SECTION 6: TOOLS, SECURITY & SECRET SANITIZATION
 # 07-tools-and-mcp.md · Sovereign OS Kit v1.0
 <!-- Layer 5: Tool Registry Contract, MCP Server List, and Compliance Rules -->

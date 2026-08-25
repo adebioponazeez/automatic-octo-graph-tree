@@ -64,3 +64,22 @@ async def test_multi_model_consensus():
     assert res.agreement_score > 0.8
     assert res.consensus_summary != ""
     assert len(res.opinions) >= 1
+
+
+@pytest.mark.asyncio
+async def test_grokbot_and_kimi_agents():
+    from octo_harness.cowork.agents import GrokbotAgent, KimiContextAgent
+
+    settings = Settings(mock_mode=True)
+    engine = RouterEngine(settings=settings)
+    mem = CoworkMemory(session_id="quantum-leap-session")
+
+    grokbot = GrokbotAgent(router=engine)
+    grok_out = await grokbot.execute("Audit current API trends and challenge assumptions", memory=mem)
+    assert grok_out != ""
+    assert mem.contains("agent_output:Grokbot")
+
+    kimi = KimiContextAgent(router=engine)
+    kimi_out = await kimi.execute("Distill repository into dense context packet", memory=mem)
+    assert kimi_out != ""
+    assert mem.contains("agent_output:KimiContextEngine")

@@ -44,6 +44,7 @@ PLATFORM_MAPPINGS: Dict[str, Dict[str, any]] = {
             "AGT-CODE-001 · Principal Code Architect",
             "AGT-ROUTER-001 · Model Router & Fallback Engineer",
             "AGT-GROWTH-001 · UGC & Distribution Tactician",
+            "AGT-GROK-001 · Grokbot Real-Time Grounding & Adversarial Probe",
         ],
         "adapter_section": "xAI Grok Setup",
     },
@@ -76,6 +77,7 @@ PLATFORM_MAPPINGS: Dict[str, Dict[str, any]] = {
         "assigned_agents": [
             "AGT-OVERFLOW-001 · Multi-Model Consensus & Overflow Arbiter",
             "AGT-ROUTER-001 · Model Router & Fallback Engineer",
+            "AGT-KIMI-001 · Kimi Long-Horizon Context Synthesizer",
         ],
         "adapter_section": "OpenRouter Setup",
     },

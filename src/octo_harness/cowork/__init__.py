@@ -6,6 +6,8 @@ from octo_harness.cowork.agents import (
     BaseCoworkAgent,
     CoderAgent,
     CriticAgent,
+    GrokbotAgent,
+    KimiContextAgent,
     PlannerAgent,
     SafetyAuditorAgent,
     SynthesizerAgent,
