@@ -194,7 +194,7 @@
           document.getElementById('stat-reqs').textContent = data.cost_summary.total_requests || 0;
           document.getElementById('stat-cost').textContent = '$' + (data.cost_summary.total_cost_usd || 0).toFixed(4);
           document.getElementById('stat-tokens').textContent = (data.cost_summary.total_tokens || 0).toLocaleString();
-          document.getElementById('stat-budget').textContent = '$' + (data.cost_summary.budget_limit_usd || 100).toFixed(2);
+          document.getElementById('stat-budget').textContent = '$' + (data.cost_summary.budget_limit_usd || 50).toFixed(2);
         }
 
         // Update providers

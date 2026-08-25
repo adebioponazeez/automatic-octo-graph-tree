@@ -31,7 +31,7 @@ class CostTracker:
     Enforces maximum budget limits.
     """
 
-    def __init__(self, budget_limit_usd: float = 100.0):
+    def __init__(self, budget_limit_usd: float = 50.0):
         self.budget_limit_usd = budget_limit_usd
         self._usage_by_model: Dict[str, ModelUsageRecord] = {}
         self._total_cost_usd: float = 0.0
