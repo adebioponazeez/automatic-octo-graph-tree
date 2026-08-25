@@ -10,6 +10,7 @@ from octo_harness.router.cost_tracker import BudgetExceededError, CostTracker
 from octo_harness.router.engine import RouterEngine
 from octo_harness.router.rate_limiter import ProviderRateLimiter, TokenBucketLimiter
 from octo_harness.router.rules import RoutingRuleEngine
+from octo_harness.router.token_compressor import CompressionStats, SemanticPromptCompressor, TOONEncoder, TokenOptimizer
 
 __all__ = [
     "RouterEngine",
@@ -26,4 +27,8 @@ __all__ = [
     "CachedPrefix",
     "BatchProcessor",
     "BatchJob",
+    "TokenOptimizer",
+    "TOONEncoder",
+    "SemanticPromptCompressor",
+    "CompressionStats",
 ]

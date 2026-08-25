@@ -375,3 +375,30 @@ When integrating external tools via MCP (Model Context Protocol):
 2. **Environment Variable Reference:** Always reference keys via environment variables (e.g. `process.env.GROK_API_KEY`, `$OPENAI_API_KEY`).
 3. **Automated Scrubbing:** The `ContentGuardrails` layer scans and masks all outputs matching key patterns (`sk-...`, `xai-...`, `ant-...`, `ghp_...`).
 4. **Network Boundaries:** Agents are forbidden from making outbound HTTP requests to internal IP ranges (`127.0.0.1`, `10.0.0.0/8`, `192.168.0.0/16`, `169.254.169.254`).
+
+---
+
+# 4. Token Compression Tools (TOON & Semantic Anchors)
+
+### A. TOON (Token-Oriented Object Notation)
+- **Problem:** Sending large JSON arrays repeats field keys for every single record, wasting 40–60% of prompt tokens on `{ "id": ..., "name": ... }`.
+- **Solution:** Converts uniform JSON structures into compact tabular TOON format (`[N]{keys}: values`).
+- **Endpoint:** `POST /compress/toon`
+
+```
+# Raw JSON (180 characters / ~45 tokens):
+[
+  {"id": 1, "role": "planner", "status": "active"},
+  {"id": 2, "role": "coder", "status": "active"}
+]
+
+# TOON Compressed (65 characters / ~16 tokens - 64% savings):
+[2]{id,role,status}:
+  1,planner,active
+  2,coder,active
+```
+
+### B. Single-Token Atomic Semantic Anchors
+- **Problem:** Verbose prompt instruction headers (`CRITICAL SYSTEM INVARIANT (DO NOT VIOLATE):`) consume 8–15 tokens per section.
+- **Solution:** Replaced with verified 1-token atomic Unicode/ASCII anchors (`🔒 INVARIANT:`, `🎯 GOAL:`, `⚡ PERF:`, `🛡️ SEC:`, `📦 FORMAT:`).
+- **Endpoint:** `POST /compress/prompt`

@@ -16,6 +16,7 @@ from octo_harness.cowork.fusion import FrontierHarnessFusion, FusionParameter
 from octo_harness.cowork.graph import CoworkGraph
 from octo_harness.cowork.intelligence_explosion import IntelligenceExplosionEngine
 from octo_harness.cowork.invariant_verifier import InvariantVerifierEngine, VerificationProof
+from octo_harness.router.token_compressor import TOONEncoder, TokenOptimizer
 from octo_harness.models import (
     ChatMessage,
     CompletionRequest,
@@ -238,7 +239,32 @@ def create_router(engine: RouterEngine) -> APIRouter:
     async def batch_status() -> Dict[str, Any]:
         return engine.batch_processor.get_queue_status()
 
-    # 8. Metrics Endpoint
+    # 11. Token Compression Endpoints (TOON & Semantic Symbols)
+    @api.post("/compress/toon")
+    async def compress_toon(payload: Dict[str, Any]) -> Dict[str, Any]:
+        data = payload.get("data", payload)
+        encoded = TOONEncoder.encode(data)
+        orig_json = json.dumps(data, indent=2)
+        saved = max(0, len(orig_json) - len(encoded))
+        return {
+            "toon_encoded": encoded,
+            "original_chars": len(orig_json),
+            "compressed_chars": len(encoded),
+            "char_reduction_percent": round((saved / max(1, len(orig_json))) * 100.0, 1),
+        }
+
+    @api.post("/compress/prompt")
+    async def compress_prompt(payload: Dict[str, Any]) -> Dict[str, Any]:
+        prompt = payload.get("prompt", "")
+        context = payload.get("context", None)
+        optimizer = TokenOptimizer()
+        opt_text, stats = optimizer.optimize_payload(prompt=prompt, structured_context=context)
+        return {
+            "optimized_text": opt_text,
+            "stats": stats.model_dump(),
+        }
+
+    # 12. Metrics Endpoint
     @api.get("/metrics")
     async def metrics(format: str = Query("json", enum=["json", "prometheus"])) -> Any:
         summary = engine.cost_tracker.get_summary()
