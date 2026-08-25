@@ -14,6 +14,7 @@ from pydantic import BaseModel, Field
 from octo_harness.cowork.consensus import ModelDebateConsensus
 from octo_harness.cowork.fusion import FrontierHarnessFusion, FusionParameter
 from octo_harness.cowork.graph import CoworkGraph
+from octo_harness.cowork.intelligence_explosion import IntelligenceExplosionEngine
 from octo_harness.cowork.invariant_verifier import InvariantVerifierEngine, VerificationProof
 from octo_harness.models import (
     ChatMessage,
@@ -51,11 +52,19 @@ class InvariantVerifyPayload(BaseModel):
     max_remediation_rounds: int = 2
 
 
+class IntelligenceExplosionPayload(BaseModel):
+    objective: str
+    initial_artifact: Optional[str] = None
+    target_epochs: int = Field(default=3, ge=1, le=5)
+    artifact_type: str = "code"
+
+
 def create_router(engine: RouterEngine) -> APIRouter:
     api = APIRouter()
     consensus_engine = ModelDebateConsensus(engine)
     fusion_engine = FrontierHarnessFusion(engine)
     verifier_engine = InvariantVerifierEngine(engine)
+    explosion_engine = IntelligenceExplosionEngine(engine)
 
     # 1. Health & Liveness
     @api.get("/health")
@@ -198,7 +207,19 @@ def create_router(engine: RouterEngine) -> APIRouter:
         )
         return result.model_dump()
 
-    # 9. Batch Processing Endpoints
+    # 9. Recursive Intelligence Explosion & Capability Amplification Super-Harness
+    @api.post("/cowork/explode")
+    @api.post("/cowork/super-fusion")
+    async def run_intelligence_explosion(payload: IntelligenceExplosionPayload) -> Dict[str, Any]:
+        result = await explosion_engine.explode_intelligence(
+            objective=payload.objective,
+            initial_artifact=payload.initial_artifact,
+            target_epochs=payload.target_epochs,
+            artifact_type=payload.artifact_type,
+        )
+        return result.model_dump()
+
+    # 10. Batch Processing Endpoints
     @api.post("/batch/submit")
     async def submit_batch(request: CompletionRequest, priority: int = Query(50)) -> Dict[str, Any]:
         job = engine.batch_processor.submit_job(request, priority=priority)

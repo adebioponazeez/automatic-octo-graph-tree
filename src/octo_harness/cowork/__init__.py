@@ -21,6 +21,12 @@ from octo_harness.cowork.fusion import (
     ModelCandidate,
 )
 from octo_harness.cowork.graph import CoworkGraph, CyclicDependencyError
+from octo_harness.cowork.intelligence_explosion import (
+    CognitiveTrajectory,
+    IntelligenceExplosionEngine,
+    IntelligenceExplosionResult,
+    SynthesizedTool,
+)
 from octo_harness.cowork.invariant_verifier import (
     InvariantCheck,
     InvariantType,
@@ -38,6 +44,8 @@ __all__ = [
     "CriticAgent",
     "SynthesizerAgent",
     "SafetyAuditorAgent",
+    "GrokbotAgent",
+    "KimiContextAgent",
     "CoworkGraph",
     "CyclicDependencyError",
     "ModelDebateConsensus",
@@ -52,4 +60,8 @@ __all__ = [
     "InvariantCheck",
     "InvariantType",
     "VerificationProof",
+    "IntelligenceExplosionEngine",
+    "IntelligenceExplosionResult",
+    "CognitiveTrajectory",
+    "SynthesizedTool",
 ]

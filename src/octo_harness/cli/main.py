@@ -15,6 +15,7 @@ from octo_harness.config import Settings, get_settings
 from octo_harness.cowork.consensus import ModelDebateConsensus
 from octo_harness.cowork.fusion import FrontierHarnessFusion, FusionParameter
 from octo_harness.cowork.graph import CoworkGraph
+from octo_harness.cowork.intelligence_explosion import IntelligenceExplosionEngine
 from octo_harness.cowork.invariant_verifier import InvariantVerifierEngine
 from octo_harness.models import ChatMessage, ChatRole, CompletionRequest, RoutingStrategy
 from octo_harness.router.engine import RouterEngine
@@ -72,7 +73,14 @@ def create_parser() -> argparse.ArgumentParser:
     verify_parser.add_argument("--type", "-t", default="code", choices=["code", "json", "architectural_plan"], help="Expected artifact type")
     verify_parser.add_argument("--json", action="store_true", help="Emit raw JSON proof output")
 
-    # 6. pulse
+    # 6. explode (Recursive Intelligence Explosion & Super-Fusion)
+    explode_parser = subparsers.add_parser("explode", help="Launch recursive intelligence explosion super-harness")
+    explode_parser.add_argument("objective", type=str, help="Strategic objective for superhuman intelligence amplification")
+    explode_parser.add_argument("--epochs", "-e", type=int, default=3, help="Amplification epochs (default: 3)")
+    explode_parser.add_argument("--type", "-t", default="code", choices=["code", "json", "architectural_plan"], help="Artifact type")
+    explode_parser.add_argument("--json", action="store_true", help="Emit raw JSON report")
+
+    # 7. pulse
     subparsers.add_parser("pulse", help="Display live provider health and cost analytics")
 
     # 5. models
@@ -265,6 +273,47 @@ async def handle_verify(engine: RouterEngine, args: argparse.Namespace) -> int:
     return 0 if proof.passed_all_gates else 1
 
 
+async def handle_explode(engine: RouterEngine, args: argparse.Namespace) -> int:
+    print("=" * 80)
+    print(" [*] INITIATING SOVEREIGN INTELLIGENCE EXPLOSION SUPER-HARNESS")
+    print(f"     Objective: '{args.objective}' | Target Epochs: {args.epochs}")
+    print("=" * 80 + "\n")
+
+    explosion_engine = IntelligenceExplosionEngine(engine)
+    res = await explosion_engine.explode_intelligence(
+        objective=args.objective,
+        target_epochs=args.epochs,
+        artifact_type=args.type,
+    )
+
+    if args.json:
+        print(json.dumps(res.model_dump(), indent=2))
+        return 0
+
+    print("=" * 80)
+    print(f" INTELLIGENCE EXPLOSION COMPLETE | Capability Multiplier: {res.capability_multiplier}x")
+    print(f" Quality Curve: {res.initial_quality_score:.2f} -> {res.final_quality_score:.2f}")
+    print(f" Total Time:    {res.total_execution_time_ms}ms | Cost: ${res.total_cost_usd:.5f}")
+    print(f" Proof Hash:    {res.proof_hash[:20]}...")
+    print("=" * 80)
+
+    if res.synthesized_tools:
+        print("\n [AUTONOMOUS TOOLS SYNTHESIZED]:")
+        for st in res.synthesized_tools:
+            print(f"  + {st.tool_name:25s}: {st.description}")
+
+    print("\n [META-INVARIANTS CRYSTALLIZED]:")
+    for mi in res.meta_invariants_learned:
+        print(f"  * {mi}")
+
+    print("\n" + "=" * 80)
+    print(" SUPER-ARTIFACT DELIVERABLE:")
+    print("=" * 80)
+    print(res.super_artifact)
+    print("=" * 80)
+    return 0
+
+
 def handle_models(engine: RouterEngine) -> int:
     print("=" * 80)
     print(f" {'MODEL ID':30s} | {'PROVIDER':10s} | {'LATENCY':8s} | {'CAPABILITIES'}")
@@ -319,6 +368,9 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     if args.command == "verify":
         return asyncio.run(handle_verify(engine, args))
+
+    if args.command == "explode":
+        return asyncio.run(handle_explode(engine, args))
 
     return 0
 
