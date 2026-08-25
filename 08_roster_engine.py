@@ -102,6 +102,7 @@ def generate_bundles(output_dir: Optional[Path] = None) -> List[Path]:
     subagent_library = read_file_safe(ROOT_DIR / "05-subagent-library.md")
     platform_adapters = read_file_safe(ROOT_DIR / "06-platform-adapters.md")
     tools_mcp = read_file_safe(ROOT_DIR / "07-tools-and-mcp.md")
+    cognitive_mesh = read_file_safe(ROOT_DIR / "09-openrouter-cognitive-mesh.md")
 
     for platform_key, config in PLATFORM_MAPPINGS.items():
         bundle_path = target_dir / f"bundle-{platform_key}.md"
@@ -187,6 +188,9 @@ def generate_bundles(output_dir: Optional[Path] = None) -> List[Path]:
         "",
         "## 8. TOOLS & MCP SECURITY REGISTRY",
         tools_mcp,
+        "",
+        "## 9. OPENROUTER COGNITIVE MESH & ECONOMICS",
+        cognitive_mesh,
     ]
     handbook_path.write_text("\n\n".join(master_lines), encoding="utf-8")
     generated_files.append(handbook_path)
@@ -205,14 +209,14 @@ def main():
         for fn in [
             "00-constitution.md", "01-operating-system.md", "02-agent-contract.md",
             "03-mission-graph.md", "04-orchestrator-prompt.md", "05-subagent-library.md",
-            "06-platform-adapters.md", "07-tools-and-mcp.md"
+            "06-platform-adapters.md", "07-tools-and-mcp.md", "09-openrouter-cognitive-mesh.md"
         ]:
             if not (ROOT_DIR / fn).exists():
                 missing.append(fn)
         if missing:
             print(f"[!] Missing required files: {missing}", file=sys.stderr)
             sys.exit(1)
-        print("[✓] All 8 governance source files verified!")
+        print("[✓] All 9 governance source files verified!")
         return
 
     print("[*] Compiling Sovereign OS Kit v1.0 Platform Bundles...")
