@@ -55,12 +55,17 @@ goals:
 ```yaml
 agents:
   - id: "AGT-ORCH-001"
-    name: "Chief of Staff"
+    name: "Azeez Jr. (Chief of Staff)"
     role: "orchestrator"
     platform: "grok" # grok | chatgpt | claude | local
     status: "active"
+  - id: "AGT-CODE-001"
+    name: "Junior (Principal Code Architect)"
+    role: "coder"
+    platform: "grok"
+    status: "active"
   - id: "AGT-VERIFY-001"
-    name: "Verification Scout"
+    name: "Ahmed (Lead Verification Scout)"
     role: "verifier"
     platform: "chatgpt"
     status: "active"

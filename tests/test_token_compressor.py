@@ -17,16 +17,16 @@ from octo_harness.server.app import create_app
 
 def test_toon_encoding_uniform_array():
     data = [
-        {"id": 1, "name": "Alice", "role": "admin"},
-        {"id": 2, "name": "Bob", "role": "engineer"},
-        {"id": 3, "name": "Charlie", "role": "reviewer"},
+        {"id": 1, "name": "Azeez Jr.", "role": "admin"},
+        {"id": 2, "name": "Junior", "role": "engineer"},
+        {"id": 3, "name": "Ahmed", "role": "reviewer"},
     ]
 
     toon_result = TOONEncoder.encode(data)
     assert "[3]{id,name,role}:" in toon_result
-    assert "1,Alice,admin" in toon_result
-    assert "2,Bob,engineer" in toon_result
-    assert "3,Charlie,reviewer" in toon_result
+    assert "1,Azeez Jr.,admin" in toon_result
+    assert "2,Junior,engineer" in toon_result
+    assert "3,Ahmed,reviewer" in toon_result
 
     # Character count of TOON must be significantly less than formatted JSON
     import json
