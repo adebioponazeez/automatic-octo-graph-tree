@@ -201,7 +201,7 @@ When the Principal gives an objective:
 
 ## SECTION 5: SPECIALIST SUBAGENT LIBRARY & CONTRACTS
 # 05-subagent-library.md · Sovereign OS Kit v1.0
-<!-- Layer 4: 12 Ready Specialist Prompts -->
+<!-- Layer 4: 14 Ready Specialist Prompts -->
 <!-- Target: Reference library; instantiate and paste into Custom GPTs, subagent runners, or Grok sessions. -->
 
 ---
