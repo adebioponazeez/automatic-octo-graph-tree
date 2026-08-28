@@ -1,8 +1,8 @@
 # Octo Harness · Cowork & Grok AI Router Engine
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/tests-68%2F68%20passing-brightgreen.svg)]()
-[![Coverage](https://img.shields.io/badge/coverage-90%25-green.svg)]()
+[![Tests](https://img.shields.io/badge/tests-93%2F93%20passing-brightgreen.svg)]()
+[![Coverage](https://img.shields.io/badge/coverage-verified-green.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A high-throughput, fault-tolerant **Multi-Model AI Router & Multi-Agent Cowork Harness** designed for **xAI Grok** (Grok 3, Grok 2, Grok Vision), **OpenAI ChatGPT** (GPT-4o, GPT-4o-mini, o3-mini), **Anthropic Claude** (Claude 3.5 Sonnet/Haiku), and **Local Models** (Ollama, vLLM).

@@ -163,7 +163,7 @@ def generate_bundles(output_dir: Optional[Path] = None) -> List[Path]:
     master_lines = [
         "# Sovereign OS Kit v1.0 · Complete Master Operating Handbook",
         "> Comprehensive unified manual for multi-agent sovereign ecosystem governed by adebioponazeez.",
-        f"> Hard Budget Ceiling: **$50.00 USD / Month** ($1.67/day) | Test Passing: 78/78",
+        f"> Hard Budget Ceiling: **$50.00 USD / Month** ($1.67/day) | Test Passing: 93/93",
         "",
         "---",
         "",
