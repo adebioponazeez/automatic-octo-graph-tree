@@ -71,3 +71,15 @@
 - Principles used: C1, C2, C3, C5, C6, C8.
 - Risks / sovereignty notes: risk that someone treats old 00–09 as live truth → mitigated by precedence in UNIFIED-SYSTEM.md; risk of operator/team overlap → mitigated by SPECIALIST-MAP.
 - Expiry / review date: reviewed at each weekly audit; horizon gates at 90d/1y/3y/7y.
+
+## D-20260830-05 — Adopt the real initiative: high-scale quality content engine
+- Status: accepted
+- Date: 2026-08-30
+- Supersedes: (none — first real user initiative)
+- Decided by: user (provided rough State Pack), after operator: STRATEGIC
+- Decision: The active initiative is a high-scale content engine producing extreme-quality digital products, code, YouTube content, and licensed offerings, solving real user problems via data evidence, with non-verbal/emotional professionalism. Method grounded in Siraj Raval's *Vibe Coding Playbook* (Plan → Execute → Verify) and Mo Gawdat's *Scary Smart* (humanity-centered AI). Current cycle window 2026-08-20 → 2026-09-06. Written to `STATE-PACK.md` and `INITIATIVES/`.
+- Rationale / trade-offs: this is the user's actual mission (not an invented one); the OS now has a real initiative to exercise through Workflow A. Cost: single-operator overload across 5 roles (named in Open Risks).
+- Assumptions: 90-day done criteria are a draft pending user's real numbers; capacity word is `medium` pending confirmation.
+- Principles used: C1, C2, C4, C6.
+- Risks / sovereignty notes: reference integrity now verified; remaining unverifiable ("Emma Love"/"Alive") treated as color, not doctrine.
+- Expiry / review date: 2026-09-06 (cycle end) and 90 days out at the initiative's done date.

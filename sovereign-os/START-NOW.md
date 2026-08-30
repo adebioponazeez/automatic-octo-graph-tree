@@ -23,9 +23,10 @@ Time budget: 25 minutes/day, 40 minutes/week.
 | Step | Status |
 |---|---|
 | 1–2 Folder + Constitution | ✅ done |
-| 3 State Pack | ⏳ fill in `STATE-PACK.md` — or use the starter pack in `ARTIFACTS/WORKFLOW-A-PROMPTS-20260830.md` |
+| 3 State Pack | ✅ real pack written (`STATE-PACK.md`) — references verified |
 | 4 Five operator chats | ✅ ready to paste (`OPERATORS/*`) |
-| 5 Workflow A on the real initiative | ⏳ needs your initiative — prompts are ready |
-| 6–8 CRITIC + file + OPS | 🟡 first CRITIC note filed (`AUDITS/2026-08-30-workflow-a-package-critic.md`); needs one real run |
+| 5 Workflow A on the real initiative | 🟡 initiative adopted (D-20260830-05); needs your 90-day numbers + capacity word |
+| 6–8 CRITIC + file + OPS | 🟡 CRITIC verdict: NEEDS WORK on the [N] placeholders only |
 
-**CRITIC's verdict on the build-out: NEEDS WORK (close to READY).** The one missing input is yours: a real product/customer initiative to survive 7 years. See the audit note for the 3 fixes.
+**CRITIC's verdict:** the system and the real initiative are in place. The single blocker is
+your input — the 90-day numbers (`[N]`) and your confirmed capacity word. See the initiative file.
