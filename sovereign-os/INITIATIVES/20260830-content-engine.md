@@ -12,10 +12,10 @@ Produce at scale digital products, code, YouTube content, and licensed offerings
 extreme quality bar — professional at the non-verbal/emotional level — that solve real
 user problems proven by data evidence.
 
-90-DAY DEFINITION OF DONE (DRAFT — replace [N] with real numbers):
-In 90 days we have [N] offers live across [digital products / code / YouTube / licensed],
-[N] active users/customers who can prove a real problem was solved, every artifact passed
-the evidence + quality bar, and total AI spend ≤ $150. All decisions/artifacts filed.
+9-DAY DEFINITION OF DONE (user-set, D-20260830-05):
+"30 offers live, 150 active users, $50 max spend" over the 2026-08-20 → 2026-09-06 cycle.
+(CRITIC note: aggressive for one operator + evidence bar. Mitigate via batched waves:
+days 1–3 validate + ship top 3–5 offers; re-scope on weak evidence. See AUDITS recheck.)
 
 GOVERNING PRINCIPLES (max 7) — see PRINCIPLES.md:
 1. Files are the source of truth; chat is disposable.
@@ -44,23 +44,25 @@ TRADE-OFFS:
 - sovereignty vs convenience: own files vs one-vendor platform
 
 CHEAPEST TEST:
-Before heavy build, validate ONE offer with [N] real target users; if < [N] care, re-scope.
+Before heavy build, validate the top 3–5 offer candidates with ~10 real target users each;
+if a candidate gets weak signal, cut it. Launch in waves (days 1–3 first wave).
 
 BIGGEST IRREVERSIBLE MISTAKE:
 Committing to one non-exportable platform that holds all product/content data.
 
 FILES IN THE STORE:
 - STATE-PACK.md: updated 2026-08-30
-- DECISIONS.md: D-20260830-05
+- DECISIONS.md: D-20260830-05, D-20260830-06
 - PRINCIPLES.md: (shared governing principles apply)
+- ARTIFACTS/: WORKFLOW-A-STRATEGIC-20260830.md
 
 CRITIC VERDICT:
-NEEDS WORK — the ONE thing missing is your real 90-day numbers ([N]s) and your
-confirmed capacity word. Everything else is ready to execute.
+NEEDS WORK on plan pacing only — 30 offers in 9 days is a scope/quality risk; batch plan
+mitigates. Targets are user-set and respected.
 
 NEXT ACTION:
-User fills the [N] numbers and capacity word → then run Workflow A Step 1 (STRATEGIC).
+User confirms first-wave offers (3–5 of the 30) + what failed recently.
 
 EXPIRY / REVIEW DATE:
-2026-09-06 (cycle end); 90-day done date thereafter.
+2026-09-06 (cycle end / done date).
 ```

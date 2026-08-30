@@ -33,7 +33,7 @@ Expiry of this pack:
 ```
 STATE PACK — Sovereign OS v30
 Date: 2026-08-30
-User capacity this week: medium            ← CONFIRM. You named many roles; honest load matters.
+User capacity this week: medium            ← CONFIRMED by user
 
 Active initiative:
 Build a high-scale content engine that produces EXTREME-QUALITY digital products,
@@ -41,12 +41,9 @@ code, YouTube content, and licensed offerings — solving real user problems bac
 data evidence, at a level of professionalism (non-verbal and emotional) that raises
 the bar, not just "content that exists."
 
-90-day definition of done:
-DRAFT — needs your metrics. Suggested testable form:
-"In 90 days we have [N] products/offers live across [digital products / code / YouTube /
-licensed], [N] active users/customers who could prove a real problem was solved, every
-piece passed the data-evidence + quality bar, and total AI spend ≤ $150. All decisions
-and artifacts are filed in the store."
+9-DAY definition of done (user-set):        ← note: 9-day cycle, not 90-day
+"30 offers live, 150 active users, $50 max spend."
+(CRITIC flag: aggressive for one operator + evidence bar → batch + validate.)
 
 Current governing principles (max 7):   ← from PRINCIPLES.md
 1. Files are the source of truth; chat is disposable.
@@ -73,24 +70,20 @@ Do-not-violate:
 - Never delete the working Octo Harness / unified-system code.
 
 Last 3 accepted decisions:
-1. D-20260830-04 — Unify the two systems into ONE (governance + runtime).
-2. D-20260830-03 — Start the build-out + migration initiative.
-3. D-20260830-02 — 7-year horizon, not 3.
+1. D-20260830-05 — Adopt the real initiative: high-scale quality content engine.
+2. D-20260830-04 — Unify the two systems into ONE (governance + runtime).
+3. D-20260830-03 — Start the build-out + migration initiative.
 
 Open risks:
-- [LOW] Author/method now VERIFIED: "The Vibe Coding Playbook" is by Siraj Raval
-  (Wiley, 2026) — Plan → Execute → Verify, AI-as-cofounder. Method is grounded.
-- [LOW] Author/book now VERIFIED: Mo Gawdat, "Scary Smart" (2021) — AI ethics,
-  humanity-centered AI. Method is grounded. ("Emma Love" / "Alive" sub-references
-  remain unverifiable, but the anchor source is confirmed; treat as color, not doctrine.)
-- [MED] Single-operator workload across 5+ roles (Sovereign Architect, Strategist,
-  Entrepreneur, Content Creator, AI Product Manager) = overload risk (P4).
-- [MED] No concrete 90-day metrics yet — the "done" is a draft, not measurable.
+- [LOW] Method references verified: Siraj Raval "Vibe Coding Playbook" (Wiley 2026),
+  Mo Gawdat "Scary Smart" (2021). ("Emma Love"/"Alive" = color, not doctrine.)
+- [MED] Single-operator workload across 5+ roles = overload risk (P4).
+- [MED→HIGH] 30 offers + 150 users in 9 days, evidence-first = scope/quality risk (P5/P1).
+  Mitigation: launch in batches, validate top offers first, re-scope on weak evidence.
 
 What failed recently:
-- User: "next step is to correct those effects and build something better" — the current
-  build has shortcomings being corrected. SPECIFY what specifically underdelivered so we
-  don't repeat it.
+- User: "next step is to correct those effects and build something better." SPECIFY what
+  specifically underdelivered so we don't repeat it.
 
 What must not be re-litigated:
 - Files = truth. 7-year horizon. 5 operators stay specialized.
@@ -105,10 +98,8 @@ Forbidden vendors / lock-in:
 - No non-exportable platform that holds all product/content data.
 
 Next human action:
-1. Confirm your capacity word (high/medium/low).
-2. Tell me what the "Goddard / Emma Love" reference actually is (or drop it).
-3. Give 1–3 measurable 90-day numbers for the done criteria.
-4. Tell me specifically what failed recently.
+1. Confirm the batch plan: which 3–5 of the 30 offers ship in the first wave (days 1–3).
+2. Specify what failed recently so we don't repeat it.
 
 Expiry of this pack: 2026-09-06
 ```

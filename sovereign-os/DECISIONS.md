@@ -83,3 +83,15 @@
 - Principles used: C1, C2, C4, C6.
 - Risks / sovereignty notes: reference integrity now verified; remaining unverifiable ("Emma Love"/"Alive") treated as color, not doctrine.
 - Expiry / review date: 2026-09-06 (cycle end) and 90 days out at the initiative's done date.
+
+## D-20260830-06 — Set the 9-day done criteria for the content-engine initiative
+- Status: accepted
+- Date: 2026-08-30
+- Supersedes: the draft "[N]" placeholders in the initiative's done criteria
+- Decided by: user (provided real numbers), after operator: STRATEGIC + CRITIC
+- Decision: The content-engine initiative's done criteria is **9-day** (matching the 2026-08-20 → 2026-09-06 cycle): **30 offers live, 150 active users, ≤ $50 total AI spend.** Capacity word: **medium**. Written into `STATE-PACK.md` and `INITIATIVES/20260830-content-engine.md`.
+- Rationale / trade-offs: user-set, sovereign target. Recorded CRITIC risk: 30 offers + 150 users + evidence-first + extreme quality in 9 days with one operator is aggressive (P5/P1); mitigated by batched waves — validate + ship the top 3–5 offers in days 1–3, then scale, re-scoping on weak evidence.
+- Assumptions: "active users" definition and "offers live" scope to be confirmed; evidence bar applies to every artifact.
+- Principles used: C1, C4, C5, C6.
+- Risks / sovereignty notes: quality collapse if all 30 are rushed simultaneously — batch plan is the guardrail.
+- Expiry / review date: 2026-09-06.
