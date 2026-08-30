@@ -7,6 +7,13 @@
 
 A high-throughput, fault-tolerant **Multi-Model AI Router & Multi-Agent Cowork Harness** designed for **xAI Grok** (Grok 3, Grok 2, Grok Vision), **OpenAI ChatGPT** (GPT-4o, GPT-4o-mini, o3-mini), **Anthropic Claude** (Claude 3.5 Sonnet/Haiku), and **Local Models** (Ollama, vLLM).
 
+> ## 🎯 One System
+> This repo is **ONE system**: the Octo Harness runtime (below) is the **execution layer**, and
+> `sovereign-os/` is the **governance layer** (Constitution, State Pack, 5 operators, playbooks, decisions).
+> **Start at [`sovereign-os/UNIFIED-SYSTEM.md`](sovereign-os/UNIFIED-SYSTEM.md)** — the single source of truth
+> that merges both into one resilient, 7-year system. See also the seven-horizon recheck
+> (`sovereign-os/AUDITS/2026-08-30-seven-horizon-recheck.md`).
+
 ---
 
 ## Key Features

@@ -59,3 +59,15 @@
 - Principles used: C1, C2, C3, C8.
 - Risks / sovereignty notes: scope is large; mitigate with incremental phases and CRITIC gates.
 - Expiry / review date: 2026-10-30 or next weekly audit.
+
+## D-20260830-04 — Unify the two systems into ONE (v30 governance + Octo Harness runtime)
+- Status: accepted
+- Date: 2026-08-30
+- Supersedes: the mental model of "two separate systems"; supersedes REVIEW-AND-MERGE.md finding G1 (specialist count is 14, not 12)
+- Decided by: user (instructed critical comparison + consolidation of both versions), after operator: STRATEGIC + CRITIC
+- Decision: One system with two layers — `sovereign-os/` is the governance source of truth (C2); `src/octo_harness` + `graph/*.yaml` are the execution/machine layer. `sovereign-os/UNIFIED-SYSTEM.md` is the single entry point and authority precedence. Existing 00–09 + bundles remain as reference (regenerate bundles via `08_roster_engine.py`, never hand-edit). The 14 specialists merge into the 5 operators via `OPERATORS/SPECIALIST-MAP.md`; providers become routing config, not role identity. Best of v1.0 (budget $50/mo, ICE, autonomy tiers A0–A4, evidence contract, guardrails, fallback, TOON) folded into `PLAYBOOKS/OPERATIONS.md`.
+- Rationale / trade-offs: merging beats rewriting — preserves working verified code (93/93 tests) and adds the governance that keeps it alive 7 years. Cost: old 00–09 become reference, not live truth (some re-reading friction).
+- Assumptions: no live API keys in sandbox; real wiring is human-step; existing files preserved.
+- Principles used: C1, C2, C3, C5, C6, C8.
+- Risks / sovereignty notes: risk that someone treats old 00–09 as live truth → mitigated by precedence in UNIFIED-SYSTEM.md; risk of operator/team overlap → mitigated by SPECIALIST-MAP.
+- Expiry / review date: reviewed at each weekly audit; horizon gates at 90d/1y/3y/7y.

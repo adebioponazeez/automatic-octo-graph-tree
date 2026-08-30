@@ -4,6 +4,16 @@ This folder is the **canonical store** for the Sovereign Production OS v30. It i
 
 > Core rule: **If it matters in 90 days, it goes in the store the same day.**
 
+## ⭐ READ THIS FIRST
+**`UNIFIED-SYSTEM.md` is the single entry point** that makes this store and the existing
+Octo Harness runtime **ONE system**. It defines authority precedence, the best-of-both merge,
+and the cross-checked fixes. Start there, then this README.
+
+- `UNIFIED-SYSTEM.md` — one source of truth, authority precedence, best-of-both, cross-check fixes
+- `OPERATORS/SPECIALIST-MAP.md` — merges the 14 v1.0 specialists into the 5 operators (no overlap)
+- `PLAYBOOKS/OPERATIONS.md` — v1.0 machinery (budget $50/mo, ICE, tiers, evidence, guardrails) folded in
+- `AUDITS/2026-08-30-seven-horizon-recheck.md` — the 7-horizon cross-check of both systems
+
 ## Structure
 
 ```
@@ -66,7 +76,8 @@ See also `PLAYBOOKS/WORKFLOWS.md` (Workflows A–D), `START-NOW.md`, and `CHECKL
 | Golden examples (5 good + 4 bad) | ✅ |
 | Checklists (daily / freeze / weekly audit / 7-year survival) | ✅ |
 | Initiative + audit templates | ✅ |
-| First DECISIONS entries | ✅ (D-20260830-01, D-20260830-02, D-20260830-03) |
+| DECISIONS entries | ✅ (D-20260830-01 … D-20260830-04) |
+| **UNIFIED system (one source of truth)** | ✅ `UNIFIED-SYSTEM.md` + `OPERATORS/SPECIALIST-MAP.md` + `PLAYBOOKS/OPERATIONS.md` + 7-horizon recheck |
 | Workflow A run + exact prompts | ✅ `ARTIFACTS/WORKFLOW-A-PROMPTS-20260830.md` |
 | Initiative + first CRITIC audit | ✅ `INITIATIVES/20260830-v30-os-buildout-and-migration.md`, `AUDITS/2026-08-30-workflow-a-package-critic.md` |
 | Comparison + migration roadmap | ✅ `../COMPARE-v30-vs-EXISTING.md` |
