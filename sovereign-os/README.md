@@ -66,7 +66,9 @@ See also `PLAYBOOKS/WORKFLOWS.md` (Workflows A–D), `START-NOW.md`, and `CHECKL
 | Golden examples (5 good + 4 bad) | ✅ |
 | Checklists (daily / freeze / weekly audit / 7-year survival) | ✅ |
 | Initiative + audit templates | ✅ |
-| First DECISIONS entries | ✅ (D-20260830-01, D-20260830-02) |
+| First DECISIONS entries | ✅ (D-20260830-01, D-20260830-02, D-20260830-03) |
+| Workflow A run + exact prompts | ✅ `ARTIFACTS/WORKFLOW-A-PROMPTS-20260830.md` |
+| Initiative + first CRITIC audit | ✅ `INITIATIVES/20260830-v30-os-buildout-and-migration.md`, `AUDITS/2026-08-30-workflow-a-package-critic.md` |
 | Comparison + migration roadmap | ✅ `../COMPARE-v30-vs-EXISTING.md` |
 
 ## Comparison with the existing repo

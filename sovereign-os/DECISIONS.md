@@ -47,3 +47,15 @@
 - Principles used: C6, C7.
 - Risks / sovereignty notes: none.
 - Expiry / review date: revisit if the user changes the horizon (would be a new superseding decision).
+
+## D-20260830-03 — Start the build-out + migration initiative
+- Status: accepted
+- Date: 2026-08-30
+- Supersedes: (none)
+- Decided by: user ("proceed with all build out", "continue"), after operator: STRATEGIC
+- Decision: Run Workflow A on the real current initiative: ship Sovereign Production OS v30 and migrate the existing Octo Harness / OS Kit v1.0 repo into it, without deleting working code. Governing principles written to `PRINCIPLES.md`; initiative filed in `INITIATIVES/`.
+- Rationale / trade-offs: the repo already exists and is the asset; this makes it the live system rather than a scaffold. Cost is disciplined 25-min/day cadence.
+- Assumptions: user drives each phase and provides the real product/customer initiative for Workflow A once the OS itself is live.
+- Principles used: C1, C2, C3, C8.
+- Risks / sovereignty notes: scope is large; mitigate with incremental phases and CRITIC gates.
+- Expiry / review date: 2026-10-30 or next weekly audit.

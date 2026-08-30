@@ -23,7 +23,9 @@ Time budget: 25 minutes/day, 40 minutes/week.
 | Step | Status |
 |---|---|
 | 1–2 Folder + Constitution | ✅ done |
-| 3 State Pack | ⏳ fill in `STATE-PACK.md` |
-| 4 Five operator chats | 📋 ready to paste |
-| 5 Workflow A on the real initiative | ⏳ needs your initiative |
-| 6–8 CRITIC + file + OPS | after initiative |
+| 3 State Pack | ⏳ fill in `STATE-PACK.md` — or use the starter pack in `ARTIFACTS/WORKFLOW-A-PROMPTS-20260830.md` |
+| 4 Five operator chats | ✅ ready to paste (`OPERATORS/*`) |
+| 5 Workflow A on the real initiative | ⏳ needs your initiative — prompts are ready |
+| 6–8 CRITIC + file + OPS | 🟡 first CRITIC note filed (`AUDITS/2026-08-30-workflow-a-package-critic.md`); needs one real run |
+
+**CRITIC's verdict on the build-out: NEEDS WORK (close to READY).** The one missing input is yours: a real product/customer initiative to survive 7 years. See the audit note for the 3 fixes.
