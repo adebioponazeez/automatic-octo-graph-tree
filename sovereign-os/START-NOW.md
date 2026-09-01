@@ -23,10 +23,16 @@ Time budget: 25 minutes/day, 40 minutes/week.
 | Step | Status |
 |---|---|
 | 1–2 Folder + Constitution | ✅ done |
-| 3 State Pack | ✅ real pack written (`STATE-PACK.md`) — references verified |
+| 3 State Pack | ✅ real pack written, method verified |
 | 4 Five operator chats | ✅ ready to paste (`OPERATORS/*`) |
-| 5 Workflow A on the real initiative | 🟡 initiative adopted (D-20260830-05); needs your 90-day numbers + capacity word |
-| 6–8 CRITIC + file + OPS | 🟡 CRITIC verdict: NEEDS WORK on the [N] placeholders only |
+| 5 Workflow A on the real initiative | ✅ STRATEGIC done (9-day done: 30/150/$50) — ready for wave-1 offers |
+| 6–8 CRITIC + file + OPS | 🟡 CRITIC run; OPS 9-day cadence built; Step 2/3 prompts ready |
 
-**CRITIC's verdict:** the system and the real initiative are in place. The single blocker is
-your input — the 90-day numbers (`[N]`) and your confirmed capacity word. See the initiative file.
+**CRITIC verdict: NEEDS WORK on ONE input only — the wave-1 offer selection (3–5 offers)**
++ "what failed recently" + definitions of "active user" and "offer live." Everything else is ready.
+
+**Ready-to-run artifacts:**
+- `ARTIFACTS/WORKFLOW-A-STRATEGIC-20260830.md` — STRATEGIC run (9-day done, trade-offs, map, cheapest test)
+- `ARTIFACTS/OPS-9DAY-CADENCE-20260830.md` — day-by-day budget/quality/freeze plan
+- `ARTIFACTS/WORKFLOW-A-STEP23-PROMPTS-20260830.md` — SOFTWARE/PRODUCT-CONTENT/CRITIC/OPS prompts
+- `AUDITS/2026-08-30-content-engine-critic.md` — CRITIC pass
